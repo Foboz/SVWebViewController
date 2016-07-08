@@ -8,6 +8,9 @@
 
 @interface SVWebViewController : UIViewController
 
+@property (nonatomic, strong) UIBarButtonItem *backBarButtonItem;
+@property (nonatomic, strong) UIBarButtonItem *forwardBarButtonItem;
+
 - (instancetype)initWithAddress:(NSString*)urlString;
 - (instancetype)initWithURL:(NSURL*)URL;
 - (instancetype)initWithURLRequest:(NSURLRequest *)request;
